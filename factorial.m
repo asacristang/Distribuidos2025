@@ -1,16 +1,16 @@
 clear all
 clc
 
-num=input('Introduzca un número entero:);
+num=input('Introduzca un número entero:');
 
-factorial=1
+facto=1;
 
-for i=1:num-1
-    factorial=factorial*i
+for i=1:num
+    facto = facto*i;
 end
 
 if num>=0
-    disp('El factorial de' num2str(num) 'es:' factorial)
+    disp(['El factorial de ' num2str(num) ' es: ' num2str(facto)])
 else
-    disp(['El factorial de',num,'es:',factorial])
+    disp(['El factorial de ' num2str(num) ' es: 1'])
 end
